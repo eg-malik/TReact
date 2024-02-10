@@ -124,6 +124,7 @@ section {
 
 .split-column__title {
   font-size: 3rem;
+  color: #1a202c;
 }
 
 .split-column__para {
@@ -153,7 +154,8 @@ section {
 
 .trusted-customers__img,
 .split-column-2__img,
-.split-column-4__img {
+.split-column-4__img,
+.split-column-5__img {
   width: 100%;
 }
 
@@ -210,11 +212,14 @@ section {
 /* MAIN */
 
 .split-column-3,
-.split-column-4 {
+.split-column-4,
+.split-column-5,
+.split-column-6 {
   width: 50%;
 }
 
-.sc-2-t {
+.sc-2-t,
+.sc-3-t {
   margin-top: 1rem;
   font-weight: 900;
   line-height: 1.25;
@@ -244,4 +249,56 @@ section {
 .split-column-4__img {
   border: 1px solid rgb(226, 232, 240);
   border-radius: 0.25rem;
+}
+
+.step {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.split-column-6 {
+  margin-left: 4rem;
+}
+
+.step__num {
+  margin-right: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: rgb(203 213 224 / 1);
+}
+
+.step__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #243e63;
+}
+
+.step__desc {
+  margin-top: 0.75rem;
+  max-width: 20rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2;
+  color: rgb(113 128 150 / 1);
+}
+
+.split-column-5__img--wrapper {
+  position: relative;
+}
+
+.box-design-2 {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  left: 50%;
+  right: 0px;
+  bottom: 0px;
+  transform: translate(-50%, 50%) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  opacity: 0.15;
+  fill: currentcolor;
+  color: rgb(100 21 255 / 1);
+  z-index: -10;
 }
