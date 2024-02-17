@@ -35,8 +35,11 @@ svg {
   margin: 0 auto;
 }
 
-.btn {
+button {
   cursor: pointer;
+}
+
+.btn {
   margin-top: 2rem;
   padding: 0.75rem 2rem;
   background-color: rgb(80 17 204 / 1);
@@ -391,4 +394,152 @@ svg {
 .split-column-8 {
   display: flex;
   align-items: center;
+}
+
+.sc-5 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  width: calc(100% / 3);
+  max-width: 24rem;
+  position: relative;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: rgb(255 255 255 / 1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card__highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card__highlight--green {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.card__highlight--red {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.card-top {
+  padding: 2rem 0;
+}
+
+.card__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__price {
+  margin-top: 0.25rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card__duration {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(160 174 192 / 1);
+}
+
+.card__feature {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(113 128 150 / 1);
+}
+
+.main-feature {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #000;
+}
+
+.card-mid {
+  padding: 2rem;
+  border-top: 2px solid rgb(226, 232, 240);
+  border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+.card-end {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.price-btn {
+  width: 100%;
+  max-width: 192px;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  border-radius: 9999px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(247 250 252 / 1);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+  background-color: rgb(100 21 255 / 1);
+}
+
+.bc {
+  border-color: rgb(102 126 234 / 1);
+}
+
+.white {
+  color: #fff;
+}
+
+.price-btn--red {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.price-btn--white {
+  background: rgb(247 250 252 / 1);
+  color: rgb(100 21 255 / 1);
 }
