@@ -37,14 +37,14 @@ svg {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 .btn {
   margin-top: 2rem;
-  padding: 0.75rem 2rem;
+  padding: 1rem 2rem;
   background-color: rgb(80 17 204 / 1);
   border-radius: 9999px;
-  border: none;
   font-size: 0.875rem;
   font-weight: 700;
   color: rgb(237 242 247 / 1);
@@ -403,6 +403,7 @@ button {
 
 .cards {
   display: flex;
+  justify-content: space-between;
 }
 
 .card {
@@ -506,7 +507,6 @@ button {
     rgb(129, 230, 217) 100%
   );
   border-radius: 9999px;
-  border: none;
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -542,4 +542,51 @@ button {
 .price-btn--white {
   background: rgb(247 250 252 / 1);
   color: rgb(100 21 255 / 1);
+}
+
+.get-started__container {
+  padding: 6rem 0;
+}
+
+.get-started {
+  padding: 6rem 0;
+  border-radius: 0.5rem;
+  background-color: rgb(100 21 255 / 1);
+}
+
+.get-started__row {
+  display: flex;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.get-started__desc {
+  width: 55%;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: rgb(247 250 252 / 1);
+}
+
+.get-started__btns {
+  width: 45%;
+}
+
+.get-started__btn {
+  margin-right: 2rem;
+  padding: 1.25rem 2.5rem;
+  background-color: rgb(245 101 101 / 1);
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: rgb(247 250 252 / 1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.get-started__btn:last-child {
+  margin: 0;
+  border: 1px solid rgb(160 174 192 / 1);
+  background-color: transparent;
 }
