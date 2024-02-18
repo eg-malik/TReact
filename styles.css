@@ -148,6 +148,7 @@ button {
 }
 
 .trusted-customers {
+  max-width: 405px;
   margin-top: 5rem;
   font-size: 0.75rem;
   font-weight: 700;
@@ -172,6 +173,36 @@ button {
 .split-column-5__img,
 .split-column-8__img {
   width: 100%;
+}
+
+.e-mail-btn__container {
+  position: relative;
+}
+
+.e-mail__input {
+  padding: 1.25rem 12rem 1.25rem 2rem;
+  border-radius: 9999px;
+  border: 2px solid rgb(226, 232, 240);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.e-mail-btn {
+  position: absolute;
+  padding: 1rem 0;
+  margin: 0.5rem 4.5rem 0.5rem 0;
+  width: 10rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgb(100 21 255 / 1);
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(247 250 252 / 1);
 }
 
 /* SERVICES */
@@ -263,7 +294,9 @@ button {
 }
 
 .sc-2-t,
-.sc-3-t {
+.sc-3-t,
+.sc-4-t,
+.sc-5-t {
   margin-top: 1rem;
   font-weight: 900;
   line-height: 1.25;
